@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="qbrainx.reports.extent.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="qbrainx.executable.scripts.LoginScripts"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="qbrainx.executable.scripts.LoginScripts">
+        <methods>
+          <include name="beforeExecution"/>
+          <include name="testCase2"/>
+        </methods>
+      </class> <!-- qbrainx.executable.scripts.LoginScripts -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
